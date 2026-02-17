@@ -4,8 +4,6 @@ RUN a2enmod rewrite
 
 COPY . /var/www/html/
 
-RUN ls -R /var/www/html
-
 ENV APACHE_DOCUMENT_ROOT /var/www/html/public
 
 RUN sed -ri "s!/var/www/html!${APACHE_DOCUMENT_ROOT}!g" /etc/apache2/sites-available/000-default.conf
