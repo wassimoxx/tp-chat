@@ -82,12 +82,6 @@ class AuthController extends Controller
             if ($remainingUsers === 0) {
                 $this->chatStore->clearAll();
             }
-            class AuthController {
-    public function login() {
-        require BASE_PATH . '/app/Views/auth/login.php';
-    }
-}
-
         }
 
         // Destroy session
@@ -96,4 +90,3 @@ class AuthController extends Controller
         $this->redirect('/');
     }
 }
-
